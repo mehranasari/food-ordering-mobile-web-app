@@ -1,0 +1,95 @@
+@import "~react-toastify/dist/ReactToastify.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "IranSanse";
+}
+
+/* @font-face {
+  font-family: "IranYekan";
+  src: url("../src/Assets/Fonts/IranYekan/IRANYekanRegular.ttf");
+  font-weight: regular;
+  font-style: normal;
+} */
+@font-face {
+  font-family: "IranSanse";
+  src: url("../src/Assets/Fonts/IranSans/iransans.ttf");
+  font-weight: regular;
+  font-style: normal;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+html {
+  font-size: 14px;
+  transition: ease all 0.7s;
+}
+
+body {
+  line-height: 1.6;
+  direction: rtl;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+/* 
+*::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 0.3rem;
+  cursor: pointer;
+  z-index: 2000;
+
+} */
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  width: 100%;
+}
+
+/************** Mobile Styles ***************/
+@media (max-width: 335px) {
+  html {
+    font-size: 13px;
+  }
+}
+.Toastify__toast-container {
+  z-index: 10005;
+}
+.MuiPickersToolbar-penIconButton {
+  display: none !important;
+}
+
+.mapboxgl-map {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Image Slider */
+.yarl__root {
+  direction: ltr;
+}
+.yarl__navigation_prev, .yarl__navigation_next {
+  display:none;
+  
+}
+/************** Mobile Styles ***************/
+
+/************** Zibal PSP Styles ***************/
+.pay-box-inner-header-merchant-logo {
+  border-radius: 1rem;
+}
+#pspButton {
+  font-family: "IranSanse";
+  border-radius: 1rem;
+}
+.pay-box-footer {
+  display: none !important;
+}
+/************** Zibal PSP Styles ***************/
